@@ -35,7 +35,7 @@ Install and use by directly including the [browser files](https://github.com/the
 	<head>
 		<title>Blink-Teleportation Component</title>
 		<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-		<script src="https://rawgit.com/thedart76/aframe-blink-teleportation/master/aframe-blink-teleportation-min.js"></script>
+		<script src="https://rawgit.com/thedart76/aframe-blink-teleportation/master/js/aframe-blink-teleportation-min.js"></script>
 		<script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
 		<script src="https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js"></script>
 	</head>
