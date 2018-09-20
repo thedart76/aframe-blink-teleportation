@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Blink Teleportation Component | A-Frame</title>
+	<title>Blink-Teleportation Component | A-Frame</title>
 	<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 	<script src="https://rawgit.com/thedart76/aframe-blink-teleportation/master/js/aframe-blink-teleportation-min.js"></script>
 	<!-- REQUIRED -->
@@ -17,30 +17,28 @@
 			<img id="footsteps" src="footsteps.png">
 		</a-assets>
 		
-		<!-- RED BOX | BLINK-TELEPORTATION ELEMENT -->
+		<!-- RED BOX | BLINK-TELEPORTATION ELEMENT | WILL BE DISPLAYED AFTER CLICK ("hide: false" BY DEFAULT) -->
 		<a-box color="#AA0000" position="-4 0.5 4" class="clickable"
 		       blink-teleportation="pos: -3 0 4">
 		</a-box>
 		
-		<!-- GREEN BOX | BLINK-TELEPORTATION ELEMENT -->
+		<!-- GREEN BOX | BLINK-TELEPORTATION ELEMENT | WILL BE HIDDEN AFTER CLICK -->
 		<a-box color="#00AA00" position="4 0.5 4" class="clickable"
-		       blink-teleportation="pos: 3 0 4">
+		       blink-teleportation="pos: 3 0 4; hide: true">
 		</a-box>
 		
 		<!-- YELLOW BOX -->
 		<a-box color="#FFAA00" position="-4 0.5 -4"></a-box>
 		<!-- BLINK-TELEPORTATION ELEMENT | WILL BE HIDDEN AFTER CLICK -->
-		<a-image src="#footsteps" position="-4 2.5 -4" class="clickable"
-			 blink-teleportation="pos: -3 0 -4; hide: true"
-			 look-at="#cameraRig">
+		<a-image src="#footsteps" position="-4 2.5 -4" look-at="#camera" class="clickable"
+			 blink-teleportation="pos: -3 0 -4; hide: true">
 		</a-image>
 		
 		<!-- BLUE BOX -->
 		<a-box color="#0077FF" position="4 0.5 -4"></a-box>
 		<!-- BLINK-TELEPORTATION ELEMENT | WILL BE DISPLAYED AFTER CLICK ("hide: false" BY DEFAULT)  -->
-		<a-image src="#footsteps" position="4 2.5 -4" class="clickable"
-			 blink-teleportation="pos: 3 0 -4"
-			 look-at="#cameraRig">
+		<a-image src="#footsteps" position="4 2.5 -4" look-at="#camera" class="clickable"
+			 blink-teleportation="pos: 3 0 -4">
 		</a-image>
 		
 		<!-- GROUND -->
@@ -53,7 +51,7 @@
 		<!-- CAMERA RIG -->
 		<a-entity id="cameraRig" position="0 0 12">
 			<!-- CAMERA -->
-			<a-camera wasd-controls-enabled="false">
+			<a-camera id="camera" wasd-controls-enabled="false">
 				<!-- SELECTIVE INTERSECTIONS -->
 				<a-cursor raycaster="objects: .clickable"></a-cursor>
 			</a-camera>
