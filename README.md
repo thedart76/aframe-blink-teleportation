@@ -1,6 +1,6 @@
 # aframe-blink-teleportation
 
-Blink-Teleportation Component For A-Frame
+Blink-Teleportation Component For A-Frame.
 
 ![](https://github.com/thedart76/aframe-blink-teleportation/blob/master/aframe-blink-teleportation.gif)
 
