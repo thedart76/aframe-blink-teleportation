@@ -33,11 +33,11 @@ You can attach the **blink-teleportation** component to any entity, but, if you 
 Install and use by directly including the [browser files](https://github.com/thedart76/aframe-blink-teleportation/tree/master/js "browser files"), plus the required and suggested components:
 
 	<head>
-		<title>Blink-Teleportation Component</title>
-		<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-		<script src="https://rawgit.com/thedart76/aframe-blink-teleportation/master/js/aframe-blink-teleportation-min.js"></script>
-		<script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
-		<script src="https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js"></script>
+	    <title>Blink-Teleportation Component</title>
+	    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+	    <script src="https://rawgit.com/thedart76/aframe-blink-teleportation/master/js/aframe-blink-teleportation-min.js"></script>
+	    <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
+	    <script src="https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js"></script>
 	</head>
 
 ### Instructions
@@ -54,11 +54,11 @@ For example:
 
 	<!-- CAMERA RIG -->
 	<a-entity id="cameraRig">
-		<!-- CAMERA -->
-		<a-camera wasd-controls-enabled="false">
-			<!-- SELECTIVE INTERSECTIONS -->
-			<a-cursor raycaster="objects: .clickable"></a-cursor>
-		</a-camera>
+	    <!-- CAMERA -->
+	    <a-camera wasd-controls-enabled="false">
+	        <!-- SELECTIVE INTERSECTIONS -->
+	        <a-cursor raycaster="objects: .clickable"></a-cursor>
+	    </a-camera>
 	</a-entity>
 
 	<!-- THEN SET class="clickable" ON ANY BLINK-TELEPORTATION ELEMENT -->
