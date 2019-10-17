@@ -20,8 +20,6 @@ Blink-Teleportation Component For A-Frame.
 
 ### Requirements
 
-The **blink-teleportation** component relies on the [aframe-animation-component](https://github.com/ngokevin/kframe/tree/master/components/animation/ "aframe-animation-component") created by Kevin Ngo, so bear in mind that its installation is required.
-
 You can attach the **blink-teleportation** component to any entity, but, if you use flat objects such as planes or images, you want to install also the [aframe-look-at-component](https://github.com/ngokevin/kframe/tree/master/components/look-at/ "aframe-look-at-component") created by Kevin Ngo for a better UX.
 
 🙏 Thank you for your amazing components, [Kevin](https://github.com/ngokevin "Kevin")!
@@ -34,10 +32,9 @@ Install and use by directly including the [browser files](https://github.com/the
 
 	<head>
 	    <title>Blink-Teleportation Component</title>
-	    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-	    <script src="https://rawgit.com/thedart76/aframe-blink-teleportation/master/js/aframe-blink-teleportation-min.js"></script>
-	    <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
-	    <script src="https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js"></script>
+	    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+        <script src="https://rawcdn.githack.com/thedart76/aframe-blink-teleportation/787f2065c2fe8957314f3bbf80627258215334a8/js/aframe-blink-teleportation-min.js"></script>
+        <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
 	</head>
 
 ### Instructions
