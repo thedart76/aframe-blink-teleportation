@@ -2,15 +2,21 @@
 
 Blink-Teleportation Component For A-Frame.
 
-![](https://github.com/thedart76/aframe-blink-teleportation/blob/master/aframe-blink-teleportation.gif)
+![](https://github.com/thedart76/aframe-blink-teleportation/blob/master/aframe-blink-teleportation-v104-512.gif)
 
 ## Properties
 
-| Property     | Description                                                      | Default Value |
-| :----------- | :--------------------------------------------------------------- | :------------ |
-| pos          | Position to which the user will be teleported.                   |               |
-| dur          | Duration of the black image animation (Fade IN - Fade OUT)       | 300           |
-| hide         | Used to hide the blink-teleportation entity after clicking on it | false         |
+| Property         | Description                                                      | Default Value |
+| :--------------- | :--------------------------------------------------------------- | :------------ |
+| camera           | Custom camera's ID.                                              | #cam          |
+| cameraRig        | Custom camera rig's ID.                                          | #camRig       |
+| raycasterObjects | Class name for selective intersections.                          | .clickable    |
+| dof              | Specifies if targeted device is 3DOF or 6DOF.                    | 6             |
+| hand             | Customisable value for Oculus Go only.                           | right         |
+| color            | Fade-out image color.                                            | #000000       |
+| pos              | Position to which the user will be teleported.                   |               |
+| dur              | Duration of the black image animation (Fade IN - Fade OUT)       | 300           |
+| hide             | Used to hide the blink-teleportation entity after clicking on it | false         |
 
 💻 [**TRY THE DEMO**](https://thedart76.github.io/aframe-blink-teleportation/ "**TRY THE DEMO**")
 
@@ -32,8 +38,9 @@ Install and use by directly including the [browser files](https://github.com/the
 
 	<head>
 	    <title>Blink-Teleportation Component</title>
-	    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+	    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://rawcdn.githack.com/thedart76/aframe-blink-teleportation/787f2065c2fe8957314f3bbf80627258215334a8/js/aframe-blink-teleportation-min.js"></script>
+		<!-- SUGGESTED/REQUIRED COMPONENT FOR FLAT OBJECTS -->
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
 	</head>
 
@@ -45,7 +52,7 @@ For the **blink-teleportation** component to work correctly, you should:
 
 **2)** Disable the wasd-controls (Desktop mode)
 
-**3)** Use selective intersections
+**3)** Use classes on clickable objects (selective intersections)
 
 For example:
 
@@ -63,7 +70,7 @@ For example:
 
 ### Important Notes
 
-⚠️ Since you are using `raycaster="objects: .clickable"`, don't forget to set `class="clickable"` also on all the other objects that the user can interact with in your scene.
+⚠️ Since the **blink-teleportation** component automatically sets selective intersactions using `raycaster="objects: .clickable"`, don't forget to set `class="clickable"` on all the objects the user can interact with in your scene.
 
 ⚠️ Because of the order-dependent rendering in A-Frame, make sure to place the lines of code for the camera rig and its child entities at the bottom of the HTML mark-up.
 
