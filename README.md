@@ -2,7 +2,7 @@
 
 Blink-Teleportation Component For A-Frame.
 
-![](https://github.com/thedart76/aframe-blink-teleportation/blob/master/aframe-blink-teleportation-v104-512.gif)
+![](https://github.com/thedart76/aframe-blink-teleportation/blob/master/aframe-blink-teleportation-v104.gif)
 
 ## Properties
 
