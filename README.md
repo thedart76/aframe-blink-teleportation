@@ -15,7 +15,7 @@ Blink-Teleportation Component For A-Frame.
 | hand             | Customisable value for Oculus Go only.                           | right         |
 | color            | Fade-out image color.                                            | #000000       |
 | pos              | Position to which the user will be teleported.                   |               |
-| dur              | Duration of the black image animation (Fade IN - Fade OUT)       | 300           |
+| dur              | Duration of the black image animation (Fade IN - Fade OUT)       | 250           |
 | hide             | Used to hide the blink-teleportation entity after clicking on it | false         |
 
 💻 [**TRY THE DEMO**](https://thedart76.github.io/aframe-blink-teleportation/ "**TRY THE DEMO**")
