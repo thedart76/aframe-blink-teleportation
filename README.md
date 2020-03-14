@@ -60,8 +60,6 @@ For example:
 	<a-entity id="cameraRig">
 	    <!-- CAMERA -->
 	    <a-camera wasd-controls-enabled="false">
-	        <!-- SELECTIVE INTERSECTIONS -->
-	        <a-cursor raycaster="objects: .clickable"></a-cursor>
 	    </a-camera>
 	</a-entity>
 
